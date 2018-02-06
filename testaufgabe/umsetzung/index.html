@@ -10,30 +10,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class="tab">
-		<button class="tablinks" onclick="openCity(event, 'Recent news')" id="defaultOpen">Aktuelles</button>
-		<button class="tablinks" onclick="openCity(event, 'Events')">Veranstaltungen</button>
-	</div>
+	<div class="background">
+		<div class="tab">
+			<button class="tablinks" onclick="openTab(event, 'Recent news')" id="defaultOpen">Aktuelles</button>
+			<button class="tablinks" onclick="openTab(event, 'Events')">Veranstaltungen</button>
+		</div>
 
-	<!-- Tab content -->
-	<div id="Recent news" class="tabcontent">
-		<h3>London</h3>
-		<p>London is the capital city of England.</p>
-	</div>
+		<!-- Tab content -->
+		<div id="Recent news" class="tabcontent">
+			<h3>London</h3>
+			<p>London is the capital city of England.</p>
+		</div>
 
-	<div id="Events" class="tabcontent">
-		<h3>Paris</h3>
-		<p>Paris is the capital of France.</p>
-	</div>
+		<div id="Events" class="tabcontent">
+			<h3>Paris</h3>
+			<p>Paris is the capital of France.</p>
+		</div>
 
-	<div>
-		<a href="">Alle News in der Übersicht</a>
-	</div>
-	
-	<!--Script, needs to be moved to main.js-->
-	<script>
+		<div>
+			<a href="">Alle News in der Übersicht</a>
+		</div>
+
+		<!--Script, needs to be moved to main.js-->
+		<script>
 		// Get the element with id="defaultOpen" and click on it
 		document.getElementById("defaultOpen").click();
 	</script>
+</div>
 </body>
 </html> 
