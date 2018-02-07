@@ -11,16 +11,16 @@
 </head>
 <body>
 	<div class="module_frame">
-		<div class="tab">
-			<button class="tablinks" onclick="openTab(event, 'Recent news')" id="defaultOpen">
-				<b>Aktuelles</b>
-			</button>
-			<button class="tablinks" onclick="openTab(event, 'Events')">
-				<b>Veranstaltungen</b>
-			</button>
-		</div>
-
 		<div class="background">
+			<div class="tab_wrapper">
+				<button class="tablinks" onclick="openTab(event, 'Recent news')" id="defaultOpen">
+					<b>Aktuelles</b>
+				</button>
+				<button class="tablinks" onclick="openTab(event, 'Events')">
+					<b>Veranstaltungen</b>
+				</button>
+			</div>
+
 			<!-- Tab content -->
 			<div id="Recent news" class="news_item">
 				<h3>London</h3>
@@ -33,7 +33,9 @@
 			</div>
 
 			<div class="footer">
-				<a href="">Alle News in der Übersicht</a>
+				<div class="arrow_link">
+					<a href="">Alle News in der Übersicht</a>
+				</div>
 			</div>
 
 		</div>
@@ -42,4 +44,4 @@
 		<script>document.getElementById("defaultOpen").click();</script>
 	</div>
 </body>
-</html> 
+</html>
