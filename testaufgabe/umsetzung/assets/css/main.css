@@ -10,7 +10,6 @@
     background-color: #93bfe6;
     float: left;
     border: none;
-<<<<<<< HEAD
     outline: 2px;
     outline-style: solid;
     outline-color: #2976ba;
@@ -18,15 +17,6 @@
     padding: 10px 12px;
     margin-top: 20px;
     margin-right: 2px;
-=======
-    outline: 1px;
-    outline-style: all;
-    outline-color: #2976ba;
-    cursor: pointer;
-    padding: 10px 12px;
-    margin-top: 22px;
-    margin-right: 1px;
->>>>>>> 668e632edd52eae3eb816461c06ee0f541f6853c
     transition: 0.3s;
     color: #FFFFFF;
 }
@@ -41,11 +31,7 @@
     background-color: #FFFFFF;
     padding: 14px 16px;
     margin-top: 14px;
-<<<<<<< HEAD
     color: #333333;
-
-=======
->>>>>>> 668e632edd52eae3eb816461c06ee0f541f6853c
 }
 
 /* Style the tab content */
