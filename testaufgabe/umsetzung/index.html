@@ -10,12 +10,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class="background">
-		<div class="tab">
-			<button class="tablinks" onclick="openTab(event, 'Recent news')" id="defaultOpen">Aktuelles</button>
-			<button class="tablinks" onclick="openTab(event, 'Events')">Veranstaltungen</button>
-		</div>
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event, 'Recent news')" id="defaultOpen">
+			<b>Aktuelles</b>
+		</button>
+		<button class="tablinks" onclick="openTab(event, 'Events')">
+			<b>Veranstaltungen</b>
+		</button>
+	</div>
 
+	<div class="background">
 		<!-- Tab content -->
 		<div id="Recent news" class="tabcontent">
 			<h3>London</h3>
@@ -27,7 +31,7 @@
 			<p>Paris is the capital of France.</p>
 		</div>
 
-		<div>
+		<div class="footer">
 			<a href="">Alle News in der Übersicht</a>
 		</div>
 

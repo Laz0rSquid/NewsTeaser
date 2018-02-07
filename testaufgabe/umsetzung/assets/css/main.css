@@ -17,7 +17,6 @@
     padding: 10px 12px;
     margin-top: 20px;
     margin-right: 2px;
-    transition: 0.3s;
     color: #FFFFFF;
 }
 
@@ -39,9 +38,15 @@
     display: none;
     padding: 6px 12px;
     border-top: none;
-    background-color: #FFFFFF; 
+    background-color: #FFFFFF;
+    margin-left: 4px;
+    margin-right: 4px;
 } 
 
 .background {
-    background-color: #ccc;
+    background-color: #dadada;
+}
+
+.footer {
+    
 }
