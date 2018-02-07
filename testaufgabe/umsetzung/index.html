@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 	<script src="assets/js/main.js"></script>
 	<meta charset="UTF-8">
 	<meta name="description" content="Responsive News Teaser">
@@ -10,36 +10,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class="tab">
-		<button class="tablinks" onclick="openTab(event, 'Recent news')" id="defaultOpen">
-			<b>Aktuelles</b>
-		</button>
-		<button class="tablinks" onclick="openTab(event, 'Events')">
-			<b>Veranstaltungen</b>
-		</button>
-	</div>
-
-	<div class="background">
-		<!-- Tab content -->
-		<div id="Recent news" class="tabcontent">
-			<h3>London</h3>
-			<p>London is the capital city of England.</p>
+	<div class="module_frame">
+		<div class="tab">
+			<button class="tablinks" onclick="openTab(event, 'Recent news')" id="defaultOpen">
+				<b>Aktuelles</b>
+			</button>
+			<button class="tablinks" onclick="openTab(event, 'Events')">
+				<b>Veranstaltungen</b>
+			</button>
 		</div>
 
-		<div id="Events" class="tabcontent">
-			<h3>Paris</h3>
-			<p>Paris is the capital of France.</p>
-		</div>
+		<div class="background">
+			<!-- Tab content -->
+			<div id="Recent news" class="news_item">
+				<h3>London</h3>
+				<p>London is the capital city of England.</p>
+			</div>
 
-		<div class="footer">
-			<a href="">Alle News in der Übersicht</a>
-		</div>
+			<div id="Events" class="news_item">
+				<h3>Paris</h3>
+				<p>Paris is the capital of France.</p>
+			</div>
 
+			<div class="footer">
+				<a href="">Alle News in der Übersicht</a>
+			</div>
+
+		</div>
 		<!--Script, needs to be moved to main.js-->
-		<script>
-		// Get the element with id="defaultOpen" and click on it
-		document.getElementById("defaultOpen").click();
-	</script>
-</div>
+		<!-- Get the element with id="defaultOpen" and click on it -->
+		<script>document.getElementById("defaultOpen").click();</script>
+	</div>
 </body>
 </html> 

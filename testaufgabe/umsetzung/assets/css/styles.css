@@ -34,7 +34,7 @@
 }
 
 /* Style the tab content */
-.tabcontent {
+.news_item {
     display: none;
     padding: 6px 12px;
     border-top: none;
@@ -49,4 +49,9 @@
 
 .footer {
     
+}
+
+.module_frame {
+    background-color: #ff00ff; 
+    padding: 5px;
 }
