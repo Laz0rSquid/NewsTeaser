@@ -1,15 +1,26 @@
+/* TODO: look up flex box for sizing and positioning the contents of module_frame */
+
+
+/* padding and border are counted when calculating the size of the boxes */
+* {
+    box-sizing: border-box;
+}
+
+/* removes */
 html, body {
-    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .module_frame {
-    min-height: 100%;
+    min-height: 100vh;
     background-color: #ffffff; 
     padding: 5px;
 }
 
 .background {
-    height: inherit;
+    height: 100%;
+    position: relative;
     background-color: #dadada;
 }
 
@@ -21,6 +32,7 @@ html, body {
 
  /* Style the tab_wrapper */
 .tab_wrapper {
+    height: 59px;
     min-width: 300px;
     overflow: hidden;
     background-color: #2976ba;
