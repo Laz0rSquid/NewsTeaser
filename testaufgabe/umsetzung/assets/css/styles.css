@@ -11,6 +11,8 @@
 /* removes */
 html, body {
     background-color: #ff00ff;
+    margin: 0;
+    padding: 0;
 }
 
 .module-frame {
@@ -26,7 +28,7 @@ html, body {
 
 /* Style the tab_wrapper */
 .tab-wrapper {
-    height: 59px;
+    height: 45px;
     min-width: 300px;
     overflow: hidden;
     background-color: #2976ba;
@@ -39,12 +41,12 @@ html, body {
     background-color: #93bfe6;
     float: left;
     border: none;
-    outline: 2px;
+    outline: 1px;
     outline-style: solid;
     outline-color: #2976ba;
     cursor: pointer;
-    padding: 10px 12px 10px 12px;
-    margin: 20px 2px 0px 0px;
+    padding: 6px 12px 6px 12px;
+    margin: 14px 2px 0px 0px;
     color: #FFFFFF;
 }
 
@@ -56,8 +58,8 @@ html, body {
 /* Create an active/current tab_wrapperlink class */
 .tab-wrapper button.active {
     background-color: #ffffff;
-    padding: 14px 16px 14px 16px;
-    margin-top: 14px;
+    padding: 10px 12px 10px 12px;
+    margin-top: 10px;
     color: #333333;
 }
 
