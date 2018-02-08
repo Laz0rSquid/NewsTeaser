@@ -3,37 +3,35 @@
 
 /* padding and border are counted when calculating the size of the boxes */
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 /* removes */
 html, body {
-    margin: 0;
-    padding: 0;
+    background-color: #ff00ff;
 }
 
 .module-frame {
     min-height: 100vh;
     max-width: 470px;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     background-color: #ddd;
     border: solid;
+    border-width: 3px;
     border-color: #ffffff;
+    position: relative;
 }
 
-.footer {
-    /*position: absolute;
-    bottom: 0;*/
-    background-color: #ff00ff;
-}
-
- /* Style the tab_wrapper */
+/* Style the tab_wrapper */
 .tab-wrapper {
     height: 59px;
     min-width: 300px;
     overflow: hidden;
     background-color: #2976ba;
-    padding-left: 10px;
+    padding: 0px 10px 0px 10px;
+    position: relative;
 }
 
 /* Style the buttons that are used to open the tab_wrapper content */
@@ -45,9 +43,8 @@ html, body {
     outline-style: solid;
     outline-color: #2976ba;
     cursor: pointer;
-    padding: 10px 12px;
-    margin-top: 20px;
-    margin-right: 2px;
+    padding: 10px 12px 10px 12px;
+    margin: 20px 2px 0px 0px;
     color: #FFFFFF;
 }
 
@@ -59,20 +56,29 @@ html, body {
 /* Create an active/current tab_wrapperlink class */
 .tab-wrapper button.active {
     background-color: #ffffff;
-    padding: 14px 16px;
+    padding: 14px 16px 14px 16px;
     margin-top: 14px;
     color: #333333;
 }
 
+.content-wrapper {
+    display: none;
+}
+
 /* Style the tab_wrapper content */
 .news-item {
-    display: none;
-    padding: 6px 12px;
-    border-top: none;
     background-color: #ffffff;
-    margin-left: 4px;
-    margin-right: 4px;
+    border-top: none;
+    margin: 0px 3px 1px 3px;
+    min-height: 132px;
 } 
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #00ffff;
+    margin: 0px 3px 6px 3px;
+}
 
 /**/
 .arrow-link {
