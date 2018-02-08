@@ -14,9 +14,11 @@ html, body {
 
 .module-frame {
     min-height: 100vh;
+    max-width: 470px;
+    margin: 0 auto;
     background-color: #ddd;
     border: solid;
-    border-color: #ffffff; 
+    border-color: #ffffff;
 }
 
 .footer {
