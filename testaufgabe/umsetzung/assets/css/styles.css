@@ -12,16 +12,11 @@ html, body {
     padding: 0;
 }
 
-.module_frame {
+.module-frame {
     min-height: 100vh;
-    background-color: #ffffff; 
-    padding: 5px;
-}
-
-.background {
-    height: 100%;
-    position: relative;
-    background-color: #dadada;
+    background-color: #ddd;
+    border: solid;
+    border-color: #ffffff; 
 }
 
 .footer {
@@ -31,7 +26,7 @@ html, body {
 }
 
  /* Style the tab_wrapper */
-.tab_wrapper {
+.tab-wrapper {
     height: 59px;
     min-width: 300px;
     overflow: hidden;
@@ -40,7 +35,7 @@ html, body {
 }
 
 /* Style the buttons that are used to open the tab_wrapper content */
-.tab_wrapper button {
+.tab-wrapper button {
     background-color: #93bfe6;
     float: left;
     border: none;
@@ -55,12 +50,12 @@ html, body {
 }
 
 /* Change background color of buttons on hover */
-.tab_wrapper button:hover {
+.tab-wrapper button:hover {
     background-color: #ddd;
 }
 
 /* Create an active/current tab_wrapperlink class */
-.tab_wrapper button.active {
+.tab-wrapper button.active {
     background-color: #ffffff;
     padding: 14px 16px;
     margin-top: 14px;
@@ -68,7 +63,7 @@ html, body {
 }
 
 /* Style the tab_wrapper content */
-.news_item {
+.news-item {
     display: none;
     padding: 6px 12px;
     border-top: none;
@@ -78,6 +73,6 @@ html, body {
 } 
 
 /**/
-.arrow_link {
+.arrow-link {
 
 }

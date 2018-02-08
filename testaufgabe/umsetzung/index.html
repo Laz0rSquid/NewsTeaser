@@ -10,38 +10,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class="module_frame">
-		<div class="background">
-			<div class="tab_wrapper">
-				<button class="tablinks" onclick="openTab(event, 'Recent news')" id="defaultOpen">
-					<b>Aktuelles</b>
-				</button>
-				<button class="tablinks" onclick="openTab(event, 'Events')">
-					<b>Veranstaltungen</b>
-				</button>
-			</div>
-
-			<!-- Tab content -->
-			<div id="Recent news" class="news_item">
-				<h3>London</h3>
-				<p>London is the capital city of England.</p>
-			</div>
-
-			<div id="Events" class="news_item">
-				<h3>Paris</h3>
-				<p>Paris is the capital of France.</p>
-			</div>
-
-			<div class="footer">
-				<div class="arrow_link">
-					<a href="">Alle News in der Übersicht</a>
-				</div>
-			</div>
-
+	<div class="module-frame">
+		<div class="tab-wrapper">
+			<button class="tablinks" onclick="openTab(event, 'Recent news')" id="defaultOpen">
+				<b>Aktuelles</b>
+			</button>
+			<button class="tablinks" onclick="openTab(event, 'Events')">
+				<b>Veranstaltungen</b>
+			</button>
 		</div>
-		<!--Script, needs to be moved to main.js-->
-		<!-- Get the element with id="defaultOpen" and click on it -->
-		<script>document.getElementById("defaultOpen").click();</script>
+
+		<!-- Tab content -->
+		<div id="Recent news" class="news-item">
+			<h3>London</h3>
+			<p>London is the capital city of England.</p>
+		</div>
+
+		<div id="Events" class="news-item">
+			<h3>Paris</h3>
+			<p>Paris is the capital of France.</p>
+		</div>
+
+		<div class="footer">
+			<div class="arrow-link">
+				<a href="">Alle News in der Übersicht</a>
+			</div>
+		</div>
+
 	</div>
+	<!--Script, needs to be moved to main.js-->
+	<!-- Get the element with id="defaultOpen" and click on it -->
+	<script>document.getElementById("defaultOpen").click();</script>
 </body>
 </html>

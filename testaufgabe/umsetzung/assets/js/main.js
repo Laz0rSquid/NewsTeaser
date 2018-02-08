@@ -3,7 +3,7 @@ function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
 
     // Get all elements with class="tabcontent" and hide them
-    newsItems = document.getElementsByClassName("news_item");
+    newsItems = document.getElementsByClassName("news-item");
     for (i = 0; i < newsItems.length; i++) {
         newsItems[i].style.display = "none";
     }
