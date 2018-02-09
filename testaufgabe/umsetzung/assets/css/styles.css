@@ -1,16 +1,15 @@
-/* TODO: look up flex box for sizing and positioning the contents of module_frame */
-
-
-/* padding and border are counted when calculating the size of the boxes */
 * {
+    /* padding and border are counted when calculating the size of the boxes */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    /* used font: verdana */
+    font-family: verdana;
 }
 
-/* removes */
 html, body {
-    background-color: #ff00ff;
+    background-color: #f1f1f1;
+    /* removes innate margins*/
     margin: 0;
     padding: 0;
 }
@@ -42,8 +41,10 @@ html, body {
     outline: 1px solid #2976ba;
     cursor: pointer;
     padding: 6px 12px 6px 12px;
-    margin: 14px 2px 0px 0px;
+    margin: 16px 2px 0px 0px;
     color: #ffffff;
+    font-weight: bold;
+    font-size: 11px;
 }
 
 /* Change background color of buttons on hover */
@@ -65,36 +66,40 @@ html, body {
 
 /* style for single news item */
 .news-item {
+    display: flex;
     background-color: #ffffff;
     border-top: none;
     margin: 0px 3px 1px 3px;
     min-height: 132px;
 }
 
-.news-item__image-box {
-    float: left; padding: 17px 20px 17px 17px;
+.news-item__img-column {
+    flex: 1;
+    float: left;
+    padding: 17px 20px 17px 17px;
 }
 
-.news-item__image-box img {
-    border: 2px solid #ff00ff;
+.news-item__img-column img {
+    border: 2px solid #ddd;
 }
 
-.news-item__text-box {
+.news-item__text-column {
+    float: left;
+    
+}
+
+.text-column__date {
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.text-column__headline {
 
 }
 
-.text-box__date {
+.text-column__preview-text {
 
 }
-
-.text-box__headline {
-
-}
-
-.text-box__preview {
-
-}
-
 
 .footer {
     position: fixed;
