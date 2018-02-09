@@ -20,9 +20,7 @@ html, body {
     max-width: 470px;
     margin: 0 auto 0 auto;
     background-color: #ddd;
-    border: solid;
-    border-width: 3px;
-    border-color: #ffffff;
+    border: 3px solid #ffffff;
     position: relative;
 }
 
@@ -41,13 +39,11 @@ html, body {
     background-color: #93bfe6;
     float: left;
     border: none;
-    outline: 1px;
-    outline-style: solid;
-    outline-color: #2976ba;
+    outline: 1px solid #2976ba;
     cursor: pointer;
     padding: 6px 12px 6px 12px;
     margin: 14px 2px 0px 0px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 /* Change background color of buttons on hover */
@@ -67,13 +63,38 @@ html, body {
     display: none;
 }
 
-/* Style the tab_wrapper content */
+/* style for single news item */
 .news-item {
     background-color: #ffffff;
     border-top: none;
     margin: 0px 3px 1px 3px;
     min-height: 132px;
-} 
+}
+
+.news-item__image-box {
+    float: left; padding: 17px 20px 17px 17px;
+}
+
+.news-item__image-box img {
+    border: 2px solid #ff00ff;
+}
+
+.news-item__text-box {
+
+}
+
+.text-box__date {
+
+}
+
+.text-box__headline {
+
+}
+
+.text-box__preview {
+
+}
+
 
 .footer {
     position: fixed;
