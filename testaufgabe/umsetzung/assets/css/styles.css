@@ -15,7 +15,7 @@ html, body {
 }
 
 .module-frame {
-    max-width: 500px;
+    max-width: 800px;
     min-width: 300px;
     margin: auto;
     background-color: #ddd;
@@ -70,11 +70,13 @@ html, body {
 .news-item__img-column {
     flex: 1;
     float: left;
-    padding: 17px 0px 0px 17px;
+    text-align: center;
+    padding: 17px;
 }
 
 .news-item__img-column img {
     border: 2px solid #ddd;
+    margin: auto;
 }
 
 .news-item__text-column {
