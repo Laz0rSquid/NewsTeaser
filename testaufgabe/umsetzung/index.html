@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="assets/js/main.js"></script>
 	<meta charset="UTF-8">
 	<meta name="description" content="Responsive News Teaser">
@@ -12,61 +13,83 @@
 <body>
 	<div class="module-frame">
 		<div class="tab-wrapper">
-			<button class="tablinks" onclick="openTab(event, 'Recent news')" id="defaultOpen">
+			<button id="NewsTab" class="tablinks" onclick="openTab(event, 'RecentNews')">
 				Aktuelles
 			</button>
-			<button class="tablinks" onclick="openTab(event, 'Events')">
+			<button id="EventsTab" class="tablinks" onclick="openTab(event, 'Events')">
 				Veranstaltungen
 			</button>
 		</div>
 
 		<!-- Tab content -->
-		<div id="Recent news" class="content-wrapper">
+		<div id="RecentNews" class="content-wrapper">
 			<div class="news-item">
 				<a href="https://placeholder.com" class="news-item__img-column">
-					<img src="http://via.placeholder.com/120x88">
+					<img src="assets/img/jahresfeier.png">
 				</a>
 				<div class="news-item__text-column">	
-					<div style="font-size: 8px; font-family: verdana; font-weight: bold;">03.07.2015</div>
-					<div style="word-wrap: break-word;">Einladung zur Jahrespressekonferenz</div>
-					<div>Preview text</div>
-					<div class="arrow-link">
-						<a href="">mehr Informationen</a>
+					<div class="text-column__text-elem text-column__date">03.07.2015</div>
+					<div class="text-column__text-elem text-column__headline">
+						Einladung zur Jahrespressekonferenz
+					</div>
+					
+					<div class="text-column__info-link" >
+						<i class="material-icons info-link__icon">keyboard_arrow_right</i>
+						<a href="" class="info-link__text">mehr Informationen</a>
 					</div>
 				</div>
 			</div>
 			<div class="news-item">
-				<a href="https://placeholder.com" class="news-item__column">
-					<img src="http://via.placeholder.com/120x88">
+				<a href="https://placeholder.com" class="news-item__img-column">
+					<img src="assets/img/studie.png">
 				</a>
-				<div>London</div>
-				<div>London is the capital city of England.</div>
+				<div class="news-item__text-column">	
+					<div class="text-column__text-elem text-column__date">03.07.2015</div>
+					<div class="text-column__text-elem text-column__headline">
+						Studienstart im Juli
+					</div>
+					<div class="text-column__text-elem text-column__preview-text">Studie zu rheumatoider Arthritis (RA)</div>
+					<div class="text-column__info-link" >
+						<i class="material-icons info-link__icon">keyboard_arrow_right</i>
+						<a href="" class="info-link__text">mehr Informationen</a>
+					</div>
+				</div>
 			</div>
 			<div class="news-item">
-				<a href="https://placeholder.com" class="news-item__column">
-					<img src="http://via.placeholder.com/120x88">
+				<a href="https://placeholder.com" class="news-item__img-column">
+					<img src="assets/img/spenderherz.png">
 				</a>
-				<div>London</div>
-				<div>London is the capital city of England.</div>
+				<div class="news-item__text-column">	
+					<div class="text-column__text-elem text-column__date">02.07.2015</div>
+					<div class="text-column__text-elem text-column__headline">
+						Herzenssache - Patienten warten auf ein Spenderherz
+					</div>
+					<div class="text-column__text-elem text-column__preview-text">TV-Tipp: Ein Beitrag in der WDR-Mediathek</div>
+					<div class="text-column__info-link" >
+						<i class="material-icons info-link__icon">keyboard_arrow_right</i>
+						<a href="" class="info-link__text">mehr Informationen</a>
+					</div>
+				</div>
 			</div>
 		</div>
-
 		<div id="Events" class="content-wrapper">
-			<div class="news-item">
-				<div>Paris</div>
-				<div>Paris is the capital of France.</div>
+			<div class="event-item">
+				<div class="event__text">
+					Hier werden wir Sie demnächst über unsere anstehenden Veranstaltungen informieren
+				</div>
 			</div>
 		</div>
 
 		<div class="footer">
-			<div class="arrow-link">
-				<a href="">Alle News in der Übersicht</a>
+			<div class="text-column__info-link footer__link">
+				<i class="material-icons info-link__icon">keyboard_arrow_right</i>
+				<a href="" class="info-link__text">Alle News in der Übersicht</a>
 			</div>
 		</div>
 
 	</div>
-	<!--Script, needs to be moved to main.js-->
-	<!-- Get the element with id="defaultOpen" and click on it -->
-	<script>document.getElementById("defaultOpen").click();</script>
+	<script>
+		document.getElementById(Math.round(Math.random()) == 1 ? 'NewsTab' : 'EventsTab').click();
+	</script>
 </body>
 </html>
